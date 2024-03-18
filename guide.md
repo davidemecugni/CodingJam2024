@@ -16,8 +16,9 @@ Click on main and Create new branch
 Give the branch a meaningful name such as "CSV-reader"
 ![Branch2](/photos/2.png)
 Write the code and commit it using the GUI giving a meaningful message such as "CSV reader function for exercise 2".
-
-After one or more commits pull on your branch.
+![Branch3](/photos/3.png)
+After one or more commits pull on your branch giving a description such as "Complete CSV reader function and helper file".
+![Branch4](/photos/4.png)
 
 
 
