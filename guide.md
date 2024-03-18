@@ -18,6 +18,7 @@ Click on main and Create new branch
 Give the branch a meaningful name such as "CSV-reader"
 
 ![Branch2](/photos/2.png)
+
 Write the code and commit it using the GUI giving a meaningful message such as "CSV reader function for exercise 2".
 
 ![Branch3](/photos/3.png)
