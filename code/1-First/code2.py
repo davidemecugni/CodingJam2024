@@ -16,12 +16,13 @@ def areBracketsBalanced(expr):
             # Push the element in the stack
             stack.append(char)
         else:
- 
             # IF current character is not opening
             # bracket, then it must be closing.
             # So stack cannot be empty at this point.
+
+            #If empty
             if not stack:
-                return False
+                return char
             current_char = stack.pop()
             if current_char == '(':
                 if char != ")":
@@ -36,9 +37,6 @@ def areBracketsBalanced(expr):
                 if char != ">":
                     return "<"
  
-    # Check Empty Stack
-    if stack:
-        return True
     return True
  
  
@@ -53,8 +51,11 @@ if __name__ == "__main__":
         # Function call
         ret = areBracketsBalanced(expr)
         if ret != True:
-            total += points[ret]
+            to_add = points[ret]
+            print(to_add)
+            total += to_add
         print(ret)
+        print("\n\n")
     print("res\n\n")
     print(total)
     
