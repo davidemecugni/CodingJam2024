@@ -1,10 +1,18 @@
 # Per x pulcini:
 # 1 pulcino) un numero dispari di cambi
-# 2 pulcini) Tre
+# 2 pulcini) 3 o 7 o 11 o 3+(4*n)
+# 3 pulcini) 7
+# 4 pulcini) o 47
+
+def n_dispari(n):
+    return (n-1)*2 + 1
+
 def vede(n, k):
     if k == 0:
         return False
     return (2**n - 1) % k == 0
+
+    return k % n_dispari(n) == 0
 if __name__ == "__main__":
     #code/2-Second/input_2.txt
     with open("code/2-Second/given.txt") as f: 
