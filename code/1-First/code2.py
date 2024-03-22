@@ -58,5 +58,4 @@ if __name__ == "__main__":
     print("res\n\n")
     print(total)
     
-    # This code is contributed by AnkitRai01 and improved
-    # by Raju Pitta
+    #1315520
