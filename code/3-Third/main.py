@@ -7,7 +7,7 @@ def index_of_split(P, k):   #Returns up to which number can fit(included)
             return i - 1
 
 if __name__ == "__main__":
-    r = 1_000_000_000  #Numero di giri
+    r = 1000000000  #Numero di giri
     k = 100         #Quanti ne stanno
     #r = 4
     #k = 6
@@ -22,9 +22,9 @@ if __name__ == "__main__":
         #print(f"Fit:{can_fit}, Cannot:{cannot_fit}")
         grams_of_pancetta += sum(can_fit)
         P = cannot_fit + can_fit
-        if i % 1_000_000 == 0:
+        if i % 1000000 == 0:
             print("ciclo")
-            print(f"Delta {time.time() - t}")
+            #print(f"Delta {time.time() - t}")
             t = time.time()
     print(grams_of_pancetta)
 
