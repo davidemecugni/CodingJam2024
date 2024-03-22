@@ -36,4 +36,6 @@ Please refer Sorting Practice Problems for more.
 find index of first occurrence, count occurrences, peak element, Median of twos sorted arrays.   
 Please refer Binary Search Practice Problems for more.
 
+**sympy** Useful stuff: https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html
+
 More: https://www.geeksforgeeks.org/which-python-modules-are-useful-for-competitive-programming/
