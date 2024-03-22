@@ -1,0 +1,3 @@
+2336
+
+{"nome":"Hotel Tiby (T2)","coordinate":"44.647750, 10.914203","link_foto":"https://drive.google.com/drive/folders/1w9sEWX2tnx7W-_nvRlOHuZgQNsMoU4Xc?usp=sharing","link_maps":"https://maps.app.goo.gl/qhVjCVdnmU6PW9Po8"}{"nome":"Hotel Tiby (T2)","coordinate":"44.647750, 10.914203","link_foto":"https://drive.google.com/drive/folders/1w9sEWX2tnx7W-_nvRlOHuZgQNsMoU4Xc?usp=sharing","link_maps":"https://maps.app.goo.gl/qhVjCVdnmU6PW9Po8"}
