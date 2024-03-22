@@ -10,22 +10,22 @@ if __name__ == "__main__":
     total_points = 0
     for line in s:
         counted = reset()
-        for c in line:
+        for char in line:
             if char == '(':
-        return ')'
-        elif char == '[':
-            return ']'
-        elif char == '{':
-            return '}'
-        elif char == '<':
-            return '>'
-        elif char == ')':
-            return '('
-        elif char == ']':
-            return '['
-        elif char == '}':
-            return '{'
-        elif char == '>':
-            return '<'
-        else:
-            return None
+                counted["("] += 1
+            elif char == '[':
+                counted["["] += 1
+            elif char == '{':
+                counted["{"] += 1
+            elif char == '<':
+                counted["<"] += 1
+            elif char == ')':
+                counted["("] -= 1
+            elif char == ']':
+                counted["["] -= 1
+            elif char == '}':
+                counted["{"] -= 1
+            elif char == '>':
+                rcounted["<"] -= 1
+            else:
+                return None
