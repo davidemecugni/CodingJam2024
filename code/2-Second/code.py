@@ -1,7 +1,10 @@
+# Per x pulcini:
+# 1 pulcino) un numero dispari di cambi
+# 2 pulcini) Tre
 def vede(n, k):
     if k == 0:
         return False
-    return 2**n % k == 0
+    return (2**n - 1) % k == 0
 if __name__ == "__main__":
     #code/2-Second/input_2.txt
     with open("code/2-Second/given.txt") as f: 
