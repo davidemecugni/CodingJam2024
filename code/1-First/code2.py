@@ -26,16 +26,16 @@ def areBracketsBalanced(expr):
             current_char = stack.pop()
             if current_char == '(':
                 if char != ")":
-                    return ")"
+                    return char
             if current_char == '{':
                 if char != "}":
-                    return "}"
+                    return char
             if current_char == '[':
                 if char != "]":
-                    return "["
+                    return char
             if current_char == '<':
                 if char != ">":
-                    return "<"
+                    return char
  
     return True
  
@@ -46,6 +46,7 @@ if __name__ == "__main__":
         s = f.read()
         s = s.split("\n")
     total = 0
+    print(s)
     for line in s:
         expr = line
         # Function call
