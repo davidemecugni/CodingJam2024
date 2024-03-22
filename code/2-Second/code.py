@@ -1,6 +1,7 @@
 def vede(n, k):
-    return (2**k) % n == 0
-    
+    if k == 0:
+        return False
+    return 2**n % k == 0
 if __name__ == "__main__":
     #code/2-Second/input_2.txt
     with open("code/2-Second/given.txt") as f: 
@@ -18,6 +19,8 @@ if __name__ == "__main__":
         if vede(caso[0], caso[1]):
             print("Vede")
             casi_in_cui_vede += 1
-        print("\n\n")
+        else:
+            print("Non vede")
+        print("\n")
 
-    print(casi_in_cui_vede)
+    print(f"Risposta finale: {casi_in_cui_vede}")
