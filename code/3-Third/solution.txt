@@ -1,3 +1,6 @@
 Teoretical python:              96363636368
 Teoretical long running python: 96363636368
+C:                              96363636368
+Probabilmente sbagliato
 Teoretical c_long:              97894736832
+

@@ -24,7 +24,8 @@ if __name__ == "__main__":
         P = cannot_fit + can_fit
         if i % 1000000 == 0:
             print("ciclo")
-            #print(f"Delta {time.time() - t}")
+            print("Delta: ")
+            print((time.time() - t))
             t = time.time()
     print(grams_of_pancetta)
 
