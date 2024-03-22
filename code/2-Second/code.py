@@ -9,6 +9,8 @@ def n_dispari(n):
     return (n-1)*2 + 1
 
 def vede(n, k):
+    if k == 2**n -1:
+        return True
     if k == 0:
         return False
     j = 0
