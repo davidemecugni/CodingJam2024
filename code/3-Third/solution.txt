@@ -1,0 +1,3 @@
+Teoretical python:              96363636368
+Teoretical long running python: 96363636368
+Teoretical c_long:              97894736832
