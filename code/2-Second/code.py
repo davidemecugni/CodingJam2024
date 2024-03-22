@@ -14,7 +14,7 @@ def vede(n, k):
     j = 0
     num = (2**n - 1)
     while(num <= k):
-        if (num + 2**n * j) == k:
+        if (2**n * j) % k - num:
             return True      
         j += 1
     return False
@@ -41,3 +41,5 @@ if __name__ == "__main__":
         print("\n")
 
     print(f"Risposta finale: {casi_in_cui_vede}")
+
+#7879 non è
