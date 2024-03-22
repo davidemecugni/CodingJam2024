@@ -1,7 +1,9 @@
-def reset():
-    return {"(":0, "[":0, "{":0, "<":0}
+def vede(n, k):
+    return (2**k) % n == 0
+    
 if __name__ == "__main__":
-    with open("code/2-Second/input_2.txt") as f: 
+    #code/2-Second/input_2.txt
+    with open("code/2-Second/given.txt") as f: 
         s = f.read()
         s = s.split("\n")
     ss = []
@@ -10,4 +12,12 @@ if __name__ == "__main__":
         ll = [int(x) for x in l]
         ss.append(ll)
     s = ss
-    print(s)
+    casi_in_cui_vede = 0
+    for caso in s:
+        print(caso[0], caso[1])
+        if vede(caso[0], caso[1]):
+            print("Vede")
+            casi_in_cui_vede += 1
+        print("\n\n")
+
+    print(casi_in_cui_vede)
