@@ -6,16 +6,26 @@ d=zM+y
 n= (ed-1) / M
 
 */
+#include <stdint.h>   // for uint64_t
 #include <stdio.h>
+void print(__int128 x) {
+    if (x < 0) {
+        putchar('-');
+        x = -x;
+    }
+    if (x > 9) print(x / 10);
+    putchar(x % 10 + '0');
+}
 
 int main() {
-    unsigned long long e_f = 17459243613;
-    unsigned long long n_f = 66624478857659;
-    unsigned long long x, y, w, z, M, d, e, n;
+    __int128 e_f = 17459243613;
+    __int128 n_f = 66624478857659;
+    __int128 x, y, w, z, M, d, e, n;
 
     for (x = 1024; x < 4096; x++) {
         if(x%40 == 0){
             printf("x");
+            // printf("%ld", sizeof(unsigned long long));
         }
         for (y = 1024; y < 4096; y++) {
             for (w = 1024; w < 4096; w++) {
@@ -28,7 +38,12 @@ int main() {
                     d = z * M + y;
                     n = (e * d - 1) / M;
                     if (n == n_f) {
-                        printf("\nx: %llu, y: %llu, w: %llu, z: %llu, M: %llu, e: %llu, n: %llu, d: %llu\n", x, y, w, z, M, e, n, d);
+                        print(x);
+                        print(y);
+                        print(z);
+                        print(w);
+                        print(M);
+                        // printf("\nx: %w128d, y: %w128d, w: %w128d, z: %w128d, M: %w128d, e: %w128d, n: %w128d, d: %w128d\n", x, y, w, z, M, e, n, d);
                     }
                 }
             }
