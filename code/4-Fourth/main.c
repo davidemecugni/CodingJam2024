@@ -14,22 +14,26 @@ int main() {
     unsigned long long x, y, w, z, M, d, e, n;
 
     for (x = 1024; x < 4096; x++) {
-        printf("x");
+        if(x%40 == 0){
+            printf("x");
+        }
         for (y = 1024; y < 4096; y++) {
             for (w = 1024; w < 4096; w++) {
                 for (z = 1024; z < 4096; z++) {
                     M = x * y - 1;
                     e = w * M + x;
+                    if( e != e_f){
+                        continue;
+                    }
                     d = z * M + y;
-                    n = (e * d - 1) / M; // Note: 'd' variable is not defined in your snippet
-                    if (e == e_f && n == n_f) {
-                        printf("\nx: %llu, y: %llu, w: %llu, z: %llu, M: %llu, e: %llu, n: %llu\n", x, y, w, z, M, e, n);
+                    n = (e * d - 1) / M;
+                    if (n == n_f) {
+                        printf("\nx: %llu, y: %llu, w: %llu, z: %llu, M: %llu, e: %llu, n: %llu, d: %llu\n", x, y, w, z, M, e, n, d);
                     }
                 }
             }
         }
     }
-
+    printf("\n");
     return 0;
 }
-
