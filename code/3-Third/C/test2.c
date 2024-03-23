@@ -10,7 +10,7 @@ int main(void){
     for(size_t i = 0; i <= sizeof(P) / sizeof(int); ++i){
         int n_pulcini = 0;
        
-        while (n_pulcini <= k){
+        while (n_pulcini <= k){\\
            
             n_pulcini += P[index];
             index += 1;
